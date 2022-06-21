@@ -1,53 +1,43 @@
 body {
     padding: 0;
     margin: 0;
-}
-
-#map,
-body,
-html {
+  }
+  
+  #mapid,
+  body,
+  html {
     height: 100%;
-}
-
-
-/* a,
-a:visited {
-    color: "white" !important;
-} */
-
-.legend {
-    padding: 4px 10px;
-    font: 12px Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: #555;
-    background: #fff;
-    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Set Legend Style */
+  .info {
+    padding: 1px 10px;
+    background: #ebfae2;
     border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-.legend ul {
-    padding: 0;
-    margin: 0;
-    clear: both;
-    list-style-type: none;
-}
-
-.legend li {
-    display: block;
-    width: 22px;
-    height: 22px;
-    margin-right: 30px;
-}
-
-.legend span {
-    float: left;
-    margin-left: 25px;
-    width: 22px;
-    height: 22px;
-    padding-top: 1px;
-}
-
-h1 {
-    text-align: center;
-}
+  }
+  
+  .legend {
+    line-height: 25px;
+    color: #000000;
+  }
+  
+  .legend i {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: 10px;
+    margin-left: 10px;
+    opacity: 0.75;
+  }
+  
+  h3 {
+    margin: 0px;
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  p {
+    margin: -5px;
+    padding: -6px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
