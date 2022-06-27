@@ -39,7 +39,7 @@ var darkMap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z
   accessToken: API_KEY
 });
 
-// Define a baseMaps object to hold the base layers
+// Define the baseMaps object to hold the base layers
 var baseMaps = {
   "Satellite Map": satelliteMap,
   "Grayscale Map": grayscaleMap,
@@ -47,7 +47,7 @@ var baseMaps = {
   "Dark Map": darkMap
 };
 
-// Create overlay object to hold the overlay layer
+// Create an overlay object to hold the overlay layer
 var overlayMaps = {
   "Earthquakes": earthquakes,
   "Tectonic Plates": tectonicplates

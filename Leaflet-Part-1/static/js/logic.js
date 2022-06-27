@@ -31,11 +31,11 @@ d3.json(earthquakesURL, function(earthquakeData) {
   // Determine the marker color by depth
   function chooseColor(depth) {
     switch(true) {
-      case depth > 90:
+      case depth > 80:
         return "red";
-      case depth > 70:
+      case depth > 65:
         return "orangered";
-      case depth > 50:
+      case depth > 55:
         return "orange";
       case depth > 30:
         return "gold";
@@ -47,7 +47,7 @@ d3.json(earthquakesURL, function(earthquakeData) {
   }
 
   // Create a GeoJSON layer containing the features array
-  // Each feature a popup describing the place and time of the earthquake
+  // Each feature contains a popup that states the place and time of the earthquake
   L.geoJSON(earthquakeData, {
     pointToLayer: function (feature, latlng) {
       return L.circleMarker(latlng, 
@@ -67,10 +67,10 @@ d3.json(earthquakesURL, function(earthquakeData) {
       + new Date(feature.properties.time) + "</p><hr><p>Magnitude: " + feature.properties.mag + "</p>");
     }
   }).addTo(earthquakes);
-  // Sending our earthquakes layer to the createMap function
+  // Placing the earthquakes layer to the createMap function
   earthquakes.addTo(myMap);
 
-    // Add legend
+    // Establishing a legend
   var legend = L.control({position: "bottomright"});
   legend.onAdd = function() {
     var div = L.DomUtil.create("div", "info legend"),
